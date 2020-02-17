@@ -21,7 +21,9 @@ steps:
   displayName: 'npm install and build'
 - task: AzureCLI@0
   inputs:
-    scriptPath: beforebuild.sh
+    scriptLocation: inlineScript
+    inlineScript: |
+        az dir
   displayName: 'Connect to MongoDB'
 
 
