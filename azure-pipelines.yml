@@ -21,7 +21,7 @@ steps:
   displayName: 'npm install and build'
 - task: AzureCLI@2
   inputs:
-    azureSubscription: Free Trial
+    azureSubscription: 545d6888-a4df-4c8c-9fcf-d6d1c056885e
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
