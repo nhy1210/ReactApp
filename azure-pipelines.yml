@@ -19,10 +19,8 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureCLI@2
+- task: AzureCLI@0
   inputs:
-    azureSubscription: 545d6888-a4df-4c8c-9fcf-d6d1c056885e
-    scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
         az --version
