@@ -25,6 +25,5 @@ steps:
     azureSubscription: 'BasicSubcription'
     scriptLocation: inlineScript
     inlineScript: |
-        terraform init
-        terraform aply
+        az --version
 
