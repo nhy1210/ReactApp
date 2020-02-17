@@ -19,11 +19,14 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureCLI@0
+- task: AzureCLI@2
   inputs:
+    azureSubscription: Free Trial
+    scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
-        az dir
+        az --version
+        az account show
   displayName: 'Connect to MongoDB'
 
 
