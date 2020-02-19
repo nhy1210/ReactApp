@@ -29,6 +29,6 @@ steps:
         az --version
         pwd
         echo "Hello yml"
-        terraform init
+        ls -lrt
         echo "Bye bye"
 
