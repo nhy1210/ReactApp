@@ -27,5 +27,4 @@ steps:
     inlineScript: |
         az --version
         echo "Hello yml"
-        az account show
 
