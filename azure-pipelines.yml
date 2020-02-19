@@ -30,5 +30,7 @@ steps:
         pwd
         echo "Hello yml"
         ls -lrt
+        terraform init
+        terraform apply
         echo "Bye bye"
 
