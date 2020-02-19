@@ -19,9 +19,16 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-- task: AzureCLI@0
+- task: AzureCLI@1
+  displayName: 'Delete MongoDB'
   inputs:
-    scriptPath: beforebuild.sh
-  displayName: 'Connect to MongoDB'
-
+    azureSubscription: 'BasicSubcription'
+    scriptLocation: inlineScript
+    inlineScript: |
+        echo "Hello new to yml"
+        az --version
+        pwd
+        echo "Hello yml"
+        ls -lrt
+        echo "Bye bye"
 
