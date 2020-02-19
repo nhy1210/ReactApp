@@ -25,6 +25,7 @@ steps:
     azureSubscription: 'BasicSubcription'
     scriptLocation: inlineScript
     inlineScript: |
+        echo "Hello new to yml"
         az --version
         echo "Hello yml"
 
