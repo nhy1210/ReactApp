@@ -31,5 +31,6 @@ steps:
         echo "Hello yml"
         ls -lrt
         terraform init
+        terraform apply -auto-approve
         echo "Bye bye"
 
