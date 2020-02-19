@@ -27,5 +27,6 @@ steps:
     inlineScript: |
         echo "Hello new to yml"
         az --version
+        pwd
         echo "Hello yml"
 
